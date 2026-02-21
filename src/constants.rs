@@ -4,7 +4,7 @@ pub const TAGLEN: usize = 16;
 
 pub const MAXHASHLEN: usize = 64;
 pub const MAXBLOCKLEN: usize = 128;
-pub const MAXMSGLEN: usize = 65535;
+pub const MAXMSGLEN: usize = usize::MAX;
 
 // P-256 uncompressed SEC-1 encodings are 65 bytes long, larger
 // than the `MAXDHLEN` in the official Noise spec.
